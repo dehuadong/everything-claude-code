@@ -1,6 +1,5 @@
 # Everything Claude Code
 
-[![Stars](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnu-bash&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
@@ -35,14 +34,14 @@ This repo is the raw code only. The guides explain everything.
 </tr>
 </table>
 
-| Topic | What You'll Learn |
-|-------|-------------------|
-| Token Optimization | Model selection, system prompt slimming, background processes |
-| Memory Persistence | Hooks that save/load context across sessions automatically |
-| Continuous Learning | Auto-extract patterns from sessions into reusable skills |
-| Verification Loops | Checkpoint vs continuous evals, grader types, pass@k metrics |
-| Parallelization | Git worktrees, cascade method, when to scale instances |
-| Subagent Orchestration | The context problem, iterative retrieval pattern |
+| Topic                  | What You'll Learn                                             |
+| ---------------------- | ------------------------------------------------------------- |
+| Token Optimization     | Model selection, system prompt slimming, background processes |
+| Memory Persistence     | Hooks that save/load context across sessions automatically    |
+| Continuous Learning    | Auto-extract patterns from sessions into reusable skills      |
+| Verification Loops     | Checkpoint vs continuous evals, grader types, pass@k metrics  |
+| Parallelization        | Git worktrees, cascade method, when to scale instances        |
+| Subagent Orchestration | The context problem, iterative retrieval pattern              |
 
 ---
 
@@ -279,10 +278,12 @@ Hooks fire on tool events. Example - warn about console.log:
 ```json
 {
   "matcher": "tool == \"Edit\" && tool_input.file_path matches \"\\\\.(ts|tsx|js|jsx)$\"",
-  "hooks": [{
-    "type": "command",
-    "command": "#!/bin/bash\ngrep -n 'console\\.log' \"$file_path\" && echo '[Hook] Remove console.log' >&2"
-  }]
+  "hooks": [
+    {
+      "type": "command",
+      "command": "#!/bin/bash\ngrep -n 'console\\.log' \"$file_path\" && echo '[Hook] Remove console.log' >&2"
+    }
+  ]
 }
 ```
 
@@ -320,6 +321,7 @@ node tests/hooks/hooks.test.js
 **Contributions are welcome and encouraged.**
 
 This repo is meant to be a community resource. If you have:
+
 - Useful agents or skills
 - Clever hooks
 - Better MCP configurations
@@ -352,6 +354,7 @@ These configs are battle-tested across multiple production applications.
 **Critical:** Don't enable all MCPs at once. Your 200k context window can shrink to 70k with too many tools enabled.
 
 Rule of thumb:
+
 - Have 20-30 MCPs configured
 - Keep under 10 enabled per project
 - Under 80 tools active
@@ -361,6 +364,7 @@ Use `disabledMcpServers` in project config to disable unused ones.
 ### Customization
 
 These configs work for my workflow. You should:
+
 1. Start with what resonates
 2. Modify for your stack
 3. Remove what you don't use
