@@ -1,7 +1,12 @@
 ---
 name: architect
+<<<<<<< HEAD
 description: 软件架构专家，专注于系统设计、可扩展性和技术决策。在规划新功能、重构大型系统或进行架构决策时，请主动使用此身份。
 tools: Read, Grep, Glob
+=======
+description: Software architecture specialist for system design, scalability, and technical decision-making. Use PROACTIVELY when planning new features, refactoring large systems, or making architectural decisions.
+tools: ["Read", "Grep", "Glob"]
+>>>>>>> 267b9316972f0dfdcb6007592ed3c4228ca7ebd7
 model: opus
 ---
 

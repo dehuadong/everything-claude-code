@@ -1,7 +1,12 @@
 ---
 name: tdd-guide
+<<<<<<< HEAD
 description: 测试驱动开发专家，坚持测试先行原则。在编写新功能、修复缺陷或重构代码时主动应用。确保80%以上的测试覆盖率。
 tools: Read, Write, Edit, Bash, Grep
+=======
+description: Test-Driven Development specialist enforcing write-tests-first methodology. Use PROACTIVELY when writing new features, fixing bugs, or refactoring code. Ensures 80%+ test coverage.
+tools: ["Read", "Write", "Edit", "Bash", "Grep"]
+>>>>>>> 267b9316972f0dfdcb6007592ed3c4228ca7ebd7
 model: opus
 ---
 

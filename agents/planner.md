@@ -1,7 +1,12 @@
 ---
 name: planner
+<<<<<<< HEAD
 description: 复杂功能与重构的专家规划专员。当用户提出功能实现、架构变更或复杂重构需求时主动启用。规划任务自动激活。
 tools: Read, Grep, Glob
+=======
+description: Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or complex refactoring. Automatically activated for planning tasks.
+tools: ["Read", "Grep", "Glob"]
+>>>>>>> 267b9316972f0dfdcb6007592ed3c4228ca7ebd7
 model: opus
 ---
 

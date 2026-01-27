@@ -1,7 +1,12 @@
 ---
 name: build-error-resolver
+<<<<<<< HEAD
 description: 构建与TypeScript错误解决专家。在构建失败或类型错误出现时主动使用。仅通过最小改动修复构建/类型错误，不进行架构调整。专注于快速恢复构建通过状态。
 tools: Read, Write, Edit, Bash, Grep, Glob
+=======
+description: Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly.
+tools: ["Read", "Write", "Edit", "Bash", "Grep", "Glob"]
+>>>>>>> 267b9316972f0dfdcb6007592ed3c4228ca7ebd7
 model: opus
 ---
 

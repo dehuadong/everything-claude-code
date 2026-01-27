@@ -1,7 +1,12 @@
 ---
 name: security-reviewer
+<<<<<<< HEAD
 description: 安全漏洞检测与修复专家。在处理用户输入、身份验证、API端点或敏感数据的代码编写后，请主动使用此工具。可标记密钥泄露、SSRF、注入攻击、不安全加密及OWASP十大安全漏洞。
 tools: Read, Write, Edit, Bash, Grep, Glob
+=======
+description: Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API endpoints, or sensitive data. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10 vulnerabilities.
+tools: ["Read", "Write", "Edit", "Bash", "Grep", "Glob"]
+>>>>>>> 267b9316972f0dfdcb6007592ed3c4228ca7ebd7
 model: opus
 ---
 

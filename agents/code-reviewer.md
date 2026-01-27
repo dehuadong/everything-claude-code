@@ -1,7 +1,12 @@
 ---
 name: code-reviewer
+<<<<<<< HEAD
 description: 专业代码审查专家。主动审查代码质量、安全性和可维护性。在编写或修改代码后立即使用。所有代码变更必须使用。
 tools: Read, Grep, Glob, Bash
+=======
+description: Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use immediately after writing or modifying code. MUST BE USED for all code changes.
+tools: ["Read", "Grep", "Glob", "Bash"]
+>>>>>>> 267b9316972f0dfdcb6007592ed3c4228ca7ebd7
 model: opus
 ---
 

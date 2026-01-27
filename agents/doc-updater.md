@@ -1,7 +1,12 @@
 ---
 name: doc-updater
+<<<<<<< HEAD
 description: 文档与代码图谱专员。主动用于更新TypeScript代码图谱和文档。执行 /update-codemaps 和 /update-docs 命令，生成 docs/CODEMAPS/* 目录内容，更新 README 文件和指南。
 tools: Read, Write, Edit, Bash, Grep, Glob
+=======
+description: Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Runs /update-codemaps and /update-docs, generates docs/CODEMAPS/*, updates READMEs and guides.
+tools: ["Read", "Write", "Edit", "Bash", "Grep", "Glob"]
+>>>>>>> 267b9316972f0dfdcb6007592ed3c4228ca7ebd7
 model: opus
 ---
 

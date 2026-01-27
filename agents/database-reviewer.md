@@ -1,7 +1,12 @@
 ---
 name: database-reviewer
+<<<<<<< HEAD
 description: PostgreSQL数据库专家，专注于查询优化、模式设计、安全性与性能提升。在编写SQL、创建迁移、设计模式或排查数据库性能问题时，请主动应用本指南。遵循Supabase最佳实践。
 tools: Read, Write, Edit, Bash, Grep, Glob
+=======
+description: PostgreSQL database specialist for query optimization, schema design, security, and performance. Use PROACTIVELY when writing SQL, creating migrations, designing schemas, or troubleshooting database performance. Incorporates Supabase best practices.
+tools: ["Read", "Write", "Edit", "Bash", "Grep", "Glob"]
+>>>>>>> 267b9316972f0dfdcb6007592ed3c4228ca7ebd7
 model: opus
 ---
 
